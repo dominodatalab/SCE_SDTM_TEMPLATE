@@ -1,6 +1,6 @@
 # SCE_SDTM_TEMPLATE
 
-This repo contains the folder structure to template a study wide SDTM project for the Domino clinical trial demo
+This repo contains the folder structure to template a study wide SDTM project.
 
 # Directory structure
 
@@ -28,4 +28,3 @@ The programs follow a typical clinical trial naming convention, where the SDTM p
 # Support
 
 Programming was created by Veramed Ltd. on behalf of Domino Data Lab, Inc.
->>>>>>> origin/dev
