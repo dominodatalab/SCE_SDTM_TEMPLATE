@@ -87,7 +87,6 @@
 %let __WORKING_DIR  = %sysget(DOMINO_WORKING_DIR);
 %let __PROJECT_NAME = %sysget(DOMINO_PROJECT_NAME);
 %let __DCUTDTC      = %sysget(DCUTDTC);
-%let __SDTM_DATASET = %sysget(SDTM_DATASET);
 * runtime check that e.g. DCUTDTC is not missing;
 %if &__DCUTDTC. eq %str() %then %put %str(ER)ROR: Envoronment Variable DCUTDTC not set;
 * set  directory  where outputs (TFL) are written to;
@@ -147,6 +146,8 @@
 %if %sysfunc(find(%upcase(&__PROJECT_TYPE.),RUNALL)) ge 1 %then %do;
   * imported read-only SDTM data, using the data cutoff date.. ;
   * .. and sdtm variable to identify the correct snapshot to use ;
+  %let __SDTM_DATASET = %sysget(SDTM_DATASET);
+  %if &__SDTM_DATASET. eq %str() %then %put %str(ER)ROR: Environment Variable SDTM_DATASET not set;
   libname SDTM "/mnt/imported/data/snapshots/&__SDTM_DATASET./&__DCUTDTC." access=readonly;
   * local read/write acces to ADaM and QC folders;
   libname ADAM   "&__localdata_path./ADAM";
