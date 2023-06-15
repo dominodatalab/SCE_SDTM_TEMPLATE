@@ -2,6 +2,8 @@
 
 This repo and corresponding Domino Project contains the folder structure to template a study wide SDTM project.
 
+This repo project is copied by Data Management to instantiate a new study specfic SDTM GitHub repo and Domino Project.
+
 # Directory structure
 
 The programming is created in a typical clinical trial folder structure, where the production (prod) and qc programs have independent directory trees.
