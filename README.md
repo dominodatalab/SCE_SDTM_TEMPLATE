@@ -1,6 +1,6 @@
 # SCE_SDTM_TEMPLATE
 
-This repo contains the folder structure to template a study wide SDTM project.
+This repo and corresponding Domino Project contains the folder structure to template a study wide SDTM project.
 
 # Directory structure
 
