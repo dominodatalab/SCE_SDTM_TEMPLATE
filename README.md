@@ -25,6 +25,11 @@ repo
     └───macros
 ```
 
+# Setup
+
+1. Create a new project, named `CDISC01_SDTM_YOURNAME`, from copying this project. This will create a new project and a new study specfic GitHub repo.
+1. Run `utilities/dataset_init.py` as a job to create the appropriate SDTM Domino Datasets (SDTMBLIND, SDTMUNBLIND and METADATA).
+
 # Naming convention
 
 The programs follow a typical clinical trial naming convention, where the SDTM programs are named after the datasets they are producing (e.g. DM.sas, AE.sas, etc...)
